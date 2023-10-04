@@ -1,9 +1,8 @@
 public class Duenio {
-    String nombre;
-    int cedula;
-    int edad=0;
-    char genero;
-    String tipoSangre;
+    private String nombre;
+    private int cedula;
+    private int edad=0;
+    private char genero;
 
     public String esMayorEdad(){
         String my="";

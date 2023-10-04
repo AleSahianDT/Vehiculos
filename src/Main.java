@@ -3,6 +3,12 @@
 public class Main {
     public static void main(String[] args) {
         Auto auto1 = new Auto();
+        auto1.setPuertas(10);
+        auto1.setColor("Blanco");
+        Motor motor1=auto1.getMotor();
+        int puertas1=auto1.getPuertas();
+
+
         Auto auto2 = new Auto();
     }
 }
