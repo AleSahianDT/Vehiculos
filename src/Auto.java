@@ -6,6 +6,30 @@ public class Auto {
    private Motor motor;
    private Duenio duenio;
 
+   public Auto(){
+
+   }
+   //constructor es un metodo (especial)
+
+   public Auto(int numeroRuedas, String color, int puertas){
+      this.numeroRuedas=numeroRuedas;
+      this.color=color;
+      this.puertas=puertas;
+   }
+
+   public Auto(int numeroRuedas, String color, int puertas, Motor motor, Duenio duenio) {
+      this.numeroRuedas = numeroRuedas;
+      this.color = color;
+      this.puertas = puertas;
+      this.motor = motor;
+      this.duenio = duenio;
+   }
+
+   public Auto(Motor motor, Duenio duenio) {
+      this.motor = motor;
+      this.duenio = duenio;
+   }
+
    public int getPuertas() {
       return puertas;
    }
@@ -49,5 +73,10 @@ public class Auto {
    public void imprimirColorPuertas(){
       System.out.println("El color del vehiculo es: "+color+" y el numero de puertas es: "+puertas);
    }
+
+   public void imprimirColorPuertas(int numAuto){
+      System.out.println("El color del vehiculo "+numAuto+" es: "+color+" y el numero de puertas es: "+puertas);
+   }
+   //sobrecargas, mismo metodo, distintas acciones o parametros de entradas
 
 }

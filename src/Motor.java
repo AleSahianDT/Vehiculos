@@ -2,6 +2,15 @@ public class Motor {
     private double cilindraje=0;
     private String combustible="";
 
+    public Motor(){
+
+    }
+
+    public Motor(double cilindraje, String combustible) {
+        this.cilindraje = cilindraje;
+        this.combustible = combustible;
+    }
+
     public double caballosFueza(){
         double cf=0;
         if(combustible.equals("Diesel")){
@@ -26,5 +35,9 @@ public class Motor {
 
     public void setCombustible(String combustible) {
         this.combustible = combustible;
+    }
+
+    public void imprimirMotor(){
+        System.out.println("El cilindraje es: "+cilindraje+" y el tipo de combustible es: "+combustible);
     }
 }

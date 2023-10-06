@@ -4,6 +4,17 @@ public class Duenio {
     private int edad=0;
     private char genero;
 
+    public Duenio(){
+
+    }
+
+    public Duenio(String nombre, int cedula, int edad, char genero) {
+        this.nombre = nombre;
+        this.cedula = cedula;
+        this.edad = edad;
+        this.genero = genero;
+    }
+
     public String esMayorEdad(){
         String my="";
         if(edad>=18){
@@ -15,4 +26,8 @@ public class Duenio {
         }
         return my;
     }
+    public void imprimirDuenio(){
+        System.out.println("El nombre del dueño es: "+nombre+", su cedula es "+cedula+", su edad es "+edad+", y su genero es "+genero);
+    }
+
 }
